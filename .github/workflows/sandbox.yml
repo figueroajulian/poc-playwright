@@ -14,4 +14,4 @@ jobs:
 
     - name: Step 2
       if: steps.step1.outcome == 'failure'
-      run: echo "This step have is running because exit 1"
+      run: exit 1
